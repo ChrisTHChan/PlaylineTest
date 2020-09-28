@@ -53,6 +53,7 @@ function App() {
     .catch(e => {
       console.log(e)
     })
+    // eslint-disable-next-line
   }, [])
 
   return (
