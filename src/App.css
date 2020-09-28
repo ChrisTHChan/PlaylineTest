@@ -1,38 +1,211 @@
-.App {
+.logo {
+  width: 10.9375rem;
+  height: 5.46875rem;
+  background-image: url('./assets/logo/logo@3x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+}
+
+.main-box {
+  width: 27.8125rem;
+  height: 28.75rem;;
+  background-color: rgb(245, 245, 245);
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px 0 20px 0;
   text-align: center;
+  margin-bottom: 75px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.progress-bar {
+  width: 50%;
+  height: 5%;
+  background-image: url('./assets/icons/progress@3x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.uppercase {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-font {
+  letter-spacing: -1px;
+}
+
+.header {
+  margin-top: 15px;
+  font-size: 1.6rem;
+}
+
+.subheader {
+  font-size: 0.9rem;
+  color: grey;
+  border-bottom: 0.09375rem solid lightgrey;
+  width: 80%;
+  margin: 0 auto;
+  overflow-x: visible;
+  padding-bottom: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.text {
+  font-size: 0.6rem;
+  color: grey;
+}
+
+.playline-box {
+  width: 65%;
+  height: 30%;
+  margin: 0 auto;
+  margin-top: 0.625rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+.playline-box-item {
+  margin-left: -0.46875rem;
+}
+
+.playline-box-item-headshot {
+  border: 0.125rem solid white;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 1.4rem;
+  background-color: rgb(238, 238, 238);
+  margin-bottom: 0.3125rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.playline-box-item:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.playline-box-item:hover .playline-box-item-headshot {
+  border: 0.125rem solid lightgrey;
+}
+
+.playline-box-item:hover .playline-box-item-name {
+  text-decoration: underline;
+}
+
+.playline-box-item-name {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  color: grey;
+  margin-bottom: 0.3125rem;
+}
+
+.playline-box-item-points {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  border: 2px solid rgb(230, 230, 230);
+  margin: 0 auto;
+  border-radius: 1.25rem;
+  font-size: 0.7rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.playline-box-item-PTS {
+  color: grey; 
+  font-size: 0.7rem;
+  margin-top: 0.15625rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  height: 7.5%;
+  margin: 0 auto;
+  margin-top: 0.625rem;
+  border-bottom: 0.125rem solid rgb(230, 230, 230);
+  padding-bottom: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.download-prompt {
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.9375rem;
+}
+
+.download-prompt:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.app-store-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  height: 9%;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+}
+
+.app-store-icon {
+  width: 45%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app-store-icon:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 31.25rem;
+  height: 1.25rem;
+  color: grey;
+  margin-bottom: 75px;
+  font-size: 0.7rem;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.footer-tab {
+  border-right: 0.0625rem solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.8%;
+}
+
+.footer-tab:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
